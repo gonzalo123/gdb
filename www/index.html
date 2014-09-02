@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <script src="//localhost:3000/socket.io/socket.io.js"></script>
+    <script src="assets/angularjs/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/gdb.js"></script>
+</head>
+<body>
+
+<div ng-controller="MainController">
+    <input type="text" ng-model="key">
+    <button ng-click="change()">change</button>
+</div>
+
+</body>
+</html>

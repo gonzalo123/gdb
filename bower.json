@@ -1,0 +1,19 @@
+{
+  "name": "gdb",
+  "version": "0.0.0",
+  "authors": [
+    "Gonzalo Ayuso <gonzalo123@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.23"
+  }
+}
