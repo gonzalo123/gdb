@@ -14,7 +14,9 @@ angular.module('Gdb', [])
                 $http.get(gdbServer + '/conf', {params: {token: token}}).success(function (data) {
                     socket = io.connect(data.ioServer);
                     socket.on(data.chanel, function (data) {
-                        watches.hasOwnProperty(data.key) ? watches[data.key](data.value) : null;
+                        if (watches.hasOwnProperty(data.key)) {
+                            watches[data.key](data.value);
+                        }
                         $rootScope.$apply();
                     });
                 });
